@@ -42,6 +42,7 @@ call plug#end()
 
 
 set number
+filetype on
 syntax enable
 
 "airline####################################

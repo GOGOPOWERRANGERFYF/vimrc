@@ -45,6 +45,7 @@ call plug#end()
 syntax enable
 filetype on
 set number
+set encoding=utf-8
 
 "YouCompleteMe####################################
 "let g:ycm_use_clangd = 0

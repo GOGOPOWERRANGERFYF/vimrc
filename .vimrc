@@ -40,6 +40,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
+" vim-airline tmux插件
+Plug 'edkolev/tmuxline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'ycm-core/YouCompleteMe'
@@ -89,8 +91,6 @@ let airline#extensions#coc#warning_symbol = 'W:'
 "airline####################################
 let g:airline_powerline_fonts=1		
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tmuxline#enabled = 0
-"let g:airline#extensions#tmuxline#enabled = 1
 "let g:airline#extensions#tabline#formatter='default'
 "let g:airline#extensions#tabline#formatter='jsformatter'
 "let g:airline#extensions#tabline#formatter='unique_tail'
@@ -111,9 +111,37 @@ nnoremap <F2> :NERDTreeToggle<CR>
 "let g:NERDTreeDirArrowCollapsible = '▾'
 
 "tmuxline###################################
+"不使用的airline color时需设置:
+"let g:airline#extensions#tmuxline#enabled = 0
+"然后使用命令激活主题:Tmuxline vim_statusline_* (*代表任意airline color主题)
+
 "let g:tmuxline_powerline_separators = 0
+
+"let g:tmuxline_preset = 'crosshair'
+let g:tmuxline_preset = 'full'
+"let g:tmuxline_preset = 'minimal'
 "let g:tmuxline_preset = 'nightly_fox'
+"let g:tmuxline_preset = 'powerline'
+"let g:tmuxline_preset = 'righteous'
+"let g:tmuxline_preset = 'tmux'
+
+"可通过:Tmuxline [theme] [preset]命令选择colortheme和preset
+"colortheme只能通过命令打开???
+"let g:tmuxline_theme = 'airline'
+"let g:tmuxline_theme = 'airline_insert'
+"let g:tmuxline_theme = 'airline_visual'
+"let g:tmuxline_theme = 'iceberg'
 "let g:tmuxline_theme = 'jellybeans'
+"let g:tmuxline_theme = 'lightline'
+"let g:tmuxline_theme = 'lightline_insert'
+"let g:tmuxline_theme = 'lightline_visual'
+"let g:tmuxline_theme = 'nightly_fox'
+"let g:tmuxline_theme = 'powerline'
+"let g:tmuxline_theme = 'powerline'
+"let g:tmuxline_theme = 'statusline_1'
+"let g:tmuxline_theme = 'statusline_2'
+"let g:tmuxline_theme = 'statusline_3'
+"let g:tmuxline_theme = 'zenburn'
 
 "tagbar#####################################
 let g:tagbar_ctags_bin='ctags'

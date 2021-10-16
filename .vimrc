@@ -1233,4 +1233,4 @@ colorscheme molokai
 "colorscheme znake
 
 " 配色主题背景透明,覆盖主题的默认配置
-hi Normal ctermfg=252 ctermbg=none
+"hi Normal ctermfg=252 ctermbg=none

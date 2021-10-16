@@ -147,6 +147,9 @@ let g:tmuxline_preset = 'full'
 let g:tagbar_ctags_bin='ctags'
 nmap <F3> :TagbarToggle<CR>
 
+"fzf.vim####################################
+nnoremap <F5> :Files .<CR>
+
 "airline_theme##############################
 "let g:airline_theme='alduin'
 "let g:airline_theme='angr'
@@ -827,7 +830,7 @@ let g:airline_theme='simple'
 "colorscheme mohammad
 "colorscheme mojave
 "colorscheme molokai_dark
-colorscheme molokai
+"colorscheme molokai
 "colorscheme monoacc
 "colorscheme monochrome
 "colorscheme monokai-chris
